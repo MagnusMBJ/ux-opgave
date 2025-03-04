@@ -1,0 +1,409 @@
+body {
+    background-color: #FAF7F0;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-section {
+    width: 100%;
+    max-height: 100vh; /* Adjust this value to move the image higher */
+    overflow: hidden;
+}
+
+.full-screen-image {
+    width: 100%;
+    object-fit: cover;
+    object-position: top; /* Moves the image higher */
+    transform: translateY(-50px); /* Moves the image up without affecting layout */
+}
+.content-section {
+    padding: 50px;
+    background-color: #FAF7F0;
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #FAF7F0; /* Adjust to match your design */
+    border-bottom: 3px solid black;
+    margin-top: 20px;
+}
+
+.nav-logo {
+    position: absolute;
+
+}
+
+.nav-logo img {
+    width: 80px;
+}
+
+/* Left side navigation */
+.nav-left {
+    display: flex;
+    gap: 20px;
+    margin-left: 10%;
+}
+
+.nav-left a {
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    
+}
+
+/* Right side navigation */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-right a {
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Shopping cart icon */
+.cart-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.section-title {
+    font-size: 50px; /* Adjust as needed */
+    font-weight: bold;
+    margin-left: 50px; /* Same as .navbar padding */
+    padding-top: 30px; /* Adds space above if needed */
+}
+
+/* Center content */
+.beer-content {
+    text-align: center;
+    max-width: 600px; /* Adjust as needed */
+    margin: 0 auto; /* Centers the div */
+}
+
+/* Image styling */
+.beer-image {
+    width: 100%;
+    max-width: 400px; /* Adjust size as needed */
+    display: block;
+    margin: 0 auto 20px; /* Centers image and adds spacing */
+}
+
+/* Subtitle */
+.beer-subtitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Description text */
+.beer-description {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Text link styling */
+.text-link {
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: underline;
+    color: black;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: 0.3s ease;
+}
+
+/* Arrow styling */
+.text-link .arrow {
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect */
+.text-link:hover {
+    color: #ff8800; /* Adjust color on hover */
+}
+
+.text-link:hover .arrow {
+    transform: translateX(5px); /* Moves the arrow slightly to the right */
+}
+
+
+/* Banner container with black border */
+.scrolling-banner {
+    margin-top: 100px;
+    width: 100%;
+    background-color: #FAF7F0; /* Adjust background color */
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 10px 0;
+    position: relative;
+    border: 3px solid black; /* Black border */
+}
+
+/* Scrolling text */
+.banner-content p {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    display: inline-block;
+    animation: scrollText 10s linear infinite; /* Adjust speed */
+}
+
+/* Keyframes for left-to-right scrolling */
+@keyframes scrollText {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+/* Center the carousel */
+.beer-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    margin: 50px 0;
+    overflow: hidden;
+}
+
+/* Container for images */
+.carousel-container {
+    width: 850px; /* Ensuring 5 images are visible */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+/* The track that moves */
+.carousel-track {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Spacing between images */
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Individual beer item */
+.beer-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Default beer image scaling */
+.beer-item img {
+    width: 130px;
+    transform: scale(0.8);
+    transition: transform 0.5s ease-in-out, width 0.5s ease-in-out;
+}
+
+/* Beer name */
+.beer-name {
+    font-size: 14px;
+    font-weight: bold;
+    transition: font-size 0.5s ease-in-out;
+}
+
+/* Navigation arrows */
+.carousel-btn {
+    background: black;
+    color: white;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    position: absolute;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+/* Move buttons near the center */
+.left-btn {
+    left: 15%;
+}
+
+.right-btn {
+    right: 15%;
+}
+
+.carousel-btn:hover {
+    background: #ff8800;
+}
+
+/* Full-width two-column layout */
+.two-column-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw; /* Full width of viewport */
+    height: 400px; /* Adjust as needed */
+    border: 3px solid black; /* Black border outlining the site */
+}
+
+/* Left & Right Box Styles */
+.left-box, .right-box {
+    width: 50%; /* Makes each box take up half the width */
+    height: 100%;
+    border-right: 3px solid black; /* Creates division between left and right */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Remove border on right box so it only has an outer border */
+.right-box {
+    border-right: none;
+}
+
+.left-title {
+    position: absolute;
+    top: 5%;
+}
+
+.left-subtitle {
+    position: absolute;
+    top: 15%;
+}
+
+/* Keep right title centered */
+.right-title {
+    position: absolute;
+    top: 40%;
+    left: 10%; /* Move it 10% from the left edge */
+    transform: translateY(-50%);
+}
+
+/* CTA text (right box - centered middle-right) */
+.cta-text {
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    left: 10%; /* Align with .right-title */
+    top: 50%; /* Position it under the title */
+    transform: translateY(-50%);
+}
+
+/* Image Styling */
+/* Increase size and adjust position */
+.box-image {
+    width: 80%; /* Make image bigger */
+    max-height: 300px; /* Slightly taller */
+    object-fit: contain;
+    position: absolute;
+    bottom: 10px; /* Move closer to the bottom */
+    left: 25%; /* Move slightly to the right */
+}
+
+
+.right-image {
+    position: absolute;
+    bottom: 5px; /* Bring it even closer to the bottom */
+    right: 8%; /* Adjust position slightly */
+    width: 300px; /* Increase size */
+    max-height: 400px; /* Ensure it scales proportionally */
+}
+
+.footer {
+    width: 100%;
+    background-color: #FAF7F0; /* Adjust if needed */
+    padding: 30px 0;
+    text-align: center;
+    border-top: 3px solid black;
+}
+
+/* Logo Styling */
+.footer-logo {
+    width: 180px; /* Increase size */
+    max-height: 180px; /* Ensure proportional scaling */
+    margin-bottom: 15px;
+}
+
+/* Footer Icons */
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-icons img {
+    width: 90px; /* Increased size */
+    max-height: 90px; /* Optional: Ensure proportional scaling */
+}
+
+
+/* Footer Navigation */
+.footer-nav {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 0 10%;
+}
+
+/* Footer Sections */
+.footer-section {
+    flex: 1;
+}
+
+.footer-section h3{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.footer-section p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Section Styling */
+.event-section {
+    width: 80%;
+    margin: 50px auto;
+    text-align: left;
+    position: relative; /* Enables absolute positioning for the image */
+}
+
+/* Title Styling */
+.event-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Image Styling (Bottle sticking out from the left) */
+.bottle-image {
+    position: absolute;
+    left: 0; /* Aligns it with the left edge of the page */
+    top: 10px; /* Adjust this to align with the first paragraph */
+    width: 120px; /* Adjust the size as needed */
+}
+
+
+/* Paragraph Text Styling */
+.event-text {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
