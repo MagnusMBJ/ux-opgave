@@ -376,12 +376,134 @@ body {
     margin-bottom: 5px;
 }
 
+/* Popup Background Overlay */
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark background */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Popup Box */
+.popup-box {
+    background: white;
+    padding: 30px;
+    width: 400px;
+    max-width: 90%;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    position: relative;
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Title & Subtitle */
+.popup-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.popup-subtitle {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Input Fields (Only Black Underline) */
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid black; /* Only underline */
+    outline: none;
+    font-size: 16px;
+    background: transparent;
+    padding: 5px 0;
+}
+
+/* Checkboxes */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.checkbox-group input {
+    margin-right: 10px;
+}
+
+/* CTA Button */
+.popup-cta {
+    background: black;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.popup-cta:hover {
+    background: gray;
+}
+
+
 /* Section Styling */
 .event-section {
     width: 80%;
+    max-width: 900px;
     margin: 50px auto;
     text-align: left;
-    position: relative; /* Enables absolute positioning for the image */
+}
+
+/* Container to align image and text side by side */
+.event-container {
+    display: flex; /* Enables side-by-side layout */
+    align-items: flex-start; /* Aligns text and image at the top */
+}
+
+/* Image Styling (Starts at the edge of the viewport) */
+.bottle-image {
+    width: 300px; /* Adjust as needed */
+    flex-shrink: 0; /* Prevents image from shrinking */
+    position: absolute;
+    left: 0; /* Moves it to the very left edge of the viewport */
+    
+}
+
+/* Content Styling (Text Block) */
+.event-content {
+    flex-grow: 1; /* Allows text to take up the remaining space */
+    margin-left: 140px; /* Creates space so text doesn’t overlap the image */
 }
 
 /* Title Styling */
@@ -391,19 +513,109 @@ body {
     margin-bottom: 20px;
 }
 
-/* Image Styling (Bottle sticking out from the left) */
-.bottle-image {
-    position: absolute;
-    left: 0; /* Aligns it with the left edge of the page */
-    top: 10px; /* Adjust this to align with the first paragraph */
-    width: 120px; /* Adjust the size as needed */
-}
-
-
 /* Paragraph Text Styling */
 .event-text {
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 15px;
+}
+
+.bottle-bottom-image {
+    width: 400px; /* Adjust as needed */
+    height: 200px;
+    position: absolute;
+    left: 10%;
+    /* Sticks to the bottom of the text */
+}
+
+.bottom-right-image {
+    position: absolute;
+    right: 4%; /* Align to the bottom right */
+    bottom: 0;
+    width: 400px; /* Adjust as needed */
+    height: auto;
+}
+
+
+
+
+
+/* Section Styling - Push the box lower on the page */
+.signup-section {
+    width: 80%;
+    max-width: 600px;
+    margin: 250px auto 50px; /* Moves the box lower on the page */
+    text-align: left;
+}
+
+/* Transparent Box with Borders */
+.signup-box {
+    border: 2px solid black; /* Only the borders */
+    padding: 20px;
+    position: relative;
+    padding-bottom: 60px; /* Makes space for the button */
+}
+
+/* Title & Subtitle */
+.signup-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.signup-subtitle {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Input Fields (Only Black Underline) */
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid black; /* Only underline */
+    outline: none;
+    font-size: 16px;
+    background: transparent;
+    padding: 5px 0;
+}
+
+/* Checkboxes */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.checkbox-group input {
+    margin-right: 10px;
+}
+
+/* CTA Button (Centered at Bottom of the Box) */
+.cta-button {
+    position: absolute;
+    bottom: 10px; /* Adjust this to fine-tune button placement */
+    left: 50%;
+    transform: translateX(-50%);
+    background: black;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cta-button:hover {
+    background: gray;
 }
 

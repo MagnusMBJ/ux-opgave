@@ -103,6 +103,43 @@
             </div>
         </div>
     </footer>
+    <div id="newsletter-popup" class="popup-overlay">
+        <div class="popup-box">
+            <button class="close-btn" onclick="closePopup()">×</button>
+            <h2 class="popup-title">Tilmeld dig vores nyhedsbrev og få 10% rabat på din første ordre!</h2>
+            <p class="popup-subtitle">
+                Bliv først til at få de nyeste opdateringer, eksklusive tilbud og meget mere. <br>
+                Tilmeld dig nu og spar 10% på dit første køb!
+            </p>
+    
+            <form>
+                <!-- Input fields -->
+                <div class="input-group">
+                    <label for="popup-name">NAVN</label>
+                    <input type="text" id="popup-name" name="popup-name" required>
+                </div>
+    
+                <div class="input-group">
+                    <label for="popup-email">EMAIL</label>
+                    <input type="email" id="popup-email" name="popup-email" required>
+                </div>
+    
+                <!-- Checkboxes -->
+                <div class="checkbox-group">
+                    <input type="checkbox" id="popup-terms" name="popup-terms">
+                    <label for="popup-terms">Godkendt brugsvilkår</label>
+                </div>
+    
+                <div class="checkbox-group">
+                    <input type="checkbox" id="popup-newsletter" name="popup-newsletter">
+                    <label for="popup-newsletter">Send mig nyhedsopdateringer</label>
+                </div>
+    
+                <button type="submit" class="popup-cta">TILMELD NU</button>
+            </form>
+        </div>
+    </div>
+    
     
     
     <script src="java.js"></script>

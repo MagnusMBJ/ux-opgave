@@ -1,3 +1,16 @@
+// Show popup after 30 seconds
+setTimeout(function() {
+    document.getElementById("newsletter-popup").style.display = "flex";
+}, 30000); // 30 seconds
+
+// Close popup function
+function closePopup() {
+    document.getElementById("newsletter-popup").style.display = "none";
+}
+
+window.onload = function() {
+    document.querySelector("header").scrollIntoView({ behavior: "smooth" });
+};
 document.addEventListener("DOMContentLoaded", function () {
     const beerTrack = document.querySelector(".carousel-track");
     let beerItems = Array.from(document.querySelectorAll(".beer-item"));

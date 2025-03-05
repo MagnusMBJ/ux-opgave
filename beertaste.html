@@ -25,22 +25,67 @@
         </nav>
     </header>
     <section class="event-section">
-        <img src="img/Vector.png" alt="Bottle" class="bottle-image">
-
-        <h1 class="event-title">SKÅL UDEN PROCENTER</h1>
-        <p class="event-text">
-            Er du nysgerrig på, hvordan øl kan smage uden alkohol? Så kom og vær med til vores unikke ølsmagningsevent 
-            "Skål uden Procenter"! Hos ZeroBuzz Brew inviterer vi dig til en aften, hvor vi udforsker smagen af alkoholfri 
-            øl på en ny og spændende måde.
-        </p>
-        <p class="event-text">
-            På vores event vil du få mulighed for at smage på vores forskellige varianter af alkoholfri øl, lære om 
-            bryggeprocessen og opdage, hvordan vi skaber den samme fyldige smag, du kender fra traditionel øl – uden 
-            alkoholens "procenter". Det er den perfekte anledning til at tage på en smagsrejse, hvor fællesskab, smag og 
-            samvær er i fokus.
-        </p>
-        <p class="event-text">
-            Uanset om du er en ølentusiast eller bare nysgerrig på alternativer til alkohol, vil du blive overrasket over, 
-            hvor lækker og kompleks alkoholfri øl kan være. Kom og vær en del af fællesskabet, når vi skåler – uden procenter!
-        </p>
+        <div class="event-container">
+            <img src="img/Vector.png" alt="Bottle" class="bottle-image">
+    
+            <div class="event-content">
+                <h1 class="event-title">SKÅL UDEN PROCENTER</h1>
+                <p class="event-text">
+                    Er du nysgerrig på, hvordan øl kan smage uden alkohol? Så kom og vær med til vores unikke ølsmagningsevent 
+                    "Skål uden Procenter"! Hos ZeroBuzz Brew inviterer vi dig til en aften, hvor vi udforsker smagen af alkoholfri 
+                    øl på en ny og spændende måde.
+                </p>
+                <p class="event-text">
+                    På vores event vil du få mulighed for at smage på vores forskellige varianter af alkoholfri øl, lære om 
+                    bryggeprocessen og opdage, hvordan vi skaber den samme fyldige smag, du kender fra traditionel øl – uden 
+                    alkoholens "procenter". Det er den perfekte anledning til at tage på en smagsrejse, hvor fællesskab, smag og 
+                    samvær er i fokus.
+                </p>
+                <p class="event-text">
+                    Uanset om du er en ølentusiast eller bare nysgerrig på alternativer til alkohol, vil du blive overrasket over, 
+                    hvor lækker og kompleks alkoholfri øl kan være. Kom og vær en del af fællesskabet, når vi skåler – uden procenter!
+                </p>
+    
+                <!-- Bottom left image -->
+                <img src="img/3beer.png" alt="Bottle Bottom" class="bottle-bottom-image">
+            </div>
+        </div>
+    
+        <!-- Bottom right image -->
+        <img src="img/socialwalk.png" alt="Bottom Right Image" class="bottom-right-image">
     </section>
+    <section class="signup-section">
+        <div class="signup-box">
+            <h2 class="signup-title">TILMELD DIG HER</h2>
+            <p class="signup-subtitle">15% ved tilmelding af mere end 2 personer.</p>
+    
+            <form>
+                <!-- Input fields -->
+                <div class="input-group">
+                    <label for="name">NAVN</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+    
+                <div class="input-group">
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+    
+                <!-- Checkboxes -->
+                <div class="checkbox-group">
+                    <input type="checkbox" id="terms" name="terms">
+                    <label for="terms">Godkendt brugsvilkår</label>
+                </div>
+    
+                <div class="checkbox-group">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">Send mig nyhedsopdateringer</label>
+                </div>
+    
+                <!-- CTA Button -->
+                <button type="submit" class="cta-button">TILMELD NU</button>
+            </form>
+        </div>
+    </section>
+    
+    
