@@ -1,4 +1,4 @@
-// Show popup after 30 seconds
+
 setTimeout(function() {
     document.getElementById("newsletter-popup").style.display = "flex";
 }, 7000);

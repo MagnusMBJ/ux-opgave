@@ -315,6 +315,7 @@ body {
     position: absolute;
     bottom: 10px; 
     left: 25%; 
+}
 
 
 .right-image {
@@ -696,7 +697,7 @@ body {
     grid-column: 1 / 2; 
 }
 
-.bottom-right-image {
+.bottom-right-image2 {
     position: absolute;
     right: 0; 
     bottom: -1900px;
