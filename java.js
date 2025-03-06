@@ -1,7 +1,7 @@
 // Show popup after 30 seconds
 setTimeout(function() {
     document.getElementById("newsletter-popup").style.display = "flex";
-}, 7000); // 30 seconds
+}, 7000);
 
 // Close popup function
 function closePopup() {

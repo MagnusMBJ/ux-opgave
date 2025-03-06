@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
 body {
     background-color: #FAF7F0;
     margin: 0;
     padding: 0;
+    font-family: 'Inter', sans-serif;
 }
 
 .hero-section {
@@ -619,3 +622,178 @@ body {
     background: gray;
 }
 
+/* Catalog Section Styling */
+.catalog-section {
+    width: 80%;
+    max-width: 1000px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+/* Catalog Title */
+.catalog-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Grid Layout for Beers */
+.catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns per row */
+    gap: 30px;
+    justify-content: start; /* Aligns items to the left */
+}
+
+/* Beer Card Styling (Now Transparent) */
+.beer-card {
+    padding: 20px;
+    text-align: center;
+    box-shadow: none; /* Removes box shadow */
+    background: transparent; /* Makes it fully see-through */
+}
+
+/* Beer Image */
+.beer-card img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Beer Name */
+.beer-name {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Beer Description */
+.beer-description {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* CTA Button */
+/* CTA Button - Rounded & See-Through */
+.beer-cta {
+    background: transparent; /* Makes the button see-through */
+    color: black; /* Text color */
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 2px solid black; /* Black border */
+    border-radius: 30px; /* Makes it rounded */
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hover Effect */
+.beer-cta:hover {
+    background: black; /* Fills background on hover */
+    color: white; /* Text turns white on hover */
+}
+
+/* Left-Align the Last Beer */
+.last-beer {
+    grid-column: 1 / 2; /* Forces it to the left column */
+}
+
+.bottom-right-image {
+    position: absolute;
+    right: 0; /* Aligns to the right edge */
+    bottom: -1900px; /* Aligns to the bottom of the section */
+    width: 500px; /* Adjust size */
+    height: auto;
+}
+
+/* Cart Container */
+.cart-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Cart Icon */
+.cart-icon {
+    width: 30px; /* Adjust size */
+    height: auto;
+}
+
+/* Cart Counter */
+#cart-counter {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background: red;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 50%;
+    display: none; /* Hidden until first item is added */
+}
+
+
+.index-page main, .byer-page main {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px; /* Juster denne værdi efter behov */
+}
+
+
+
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #e0e0e0;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.responsive-img {
+    width: 100%;
+    height: auto;
+    max-height: 400px; /* Juster denne værdi efter behov */
+    margin-bottom: 20px;
+}
+
+.small-img {
+    width: 300px; /* Juster denne værdi efter behov */
+    height: auto;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Remove default link styling */
+.footer-section a {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Uses the default text color */
+}
+
+/* Optional: Add a hover effect */
+.footer-section a:hover h3 {
+    color: darkgray; /* Change this if you want a different hover effect */
+}
+
+a {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Uses the default text color */
+}
+
+/* Specific styling for CTA link */
+.cta-text {
+    cursor: pointer; /* Makes it feel clickable */
+    font-weight: bold; /* Optional: Make it stand out */
+}
+
+/* Optional: Add a hover effect */
+.cta-text:hover {
+    color: darkgray; /* Change this if you want a different hover effect */
+}
